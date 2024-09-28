@@ -8,11 +8,15 @@ public class SumOfTwoMatrices {
 		int row = sc.nextInt();
 		while(row <= 0) {
 			System.out.println("Must be greater than 0. Try again.");
+			System.out.println("Number of row(s): ");
+		        row = sc.nextInt();
 		}
 		System.out.println("Number of col(s): ");
 		int col = sc.nextInt();
 		while(col <= 0) {
 			System.out.println("Must be greater than 0. Try again.");
+			System.out.println("Number of col(s): ");
+		        col = sc.nextInt();
 		}
 		
 		System.out.println("Please enter the first matrix: ");
