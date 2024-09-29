@@ -1,0 +1,50 @@
+6.1 
+khi lựa chọn cancel thì No sẽ xuất hiện do trong đoạn mã kiểm tra yes ở toán tử ? và : khi rơi vào các trường hợp khác yes đều sẽ trả về No
+
+để chỉ in ra lựa chọn yes no
+package Home;
+
+import javax.swing.JOptionPane;
+
+public class ChoosingOption2 {
+    public static void main(String[] args) {
+        // Định nghĩa các lựa chọn tùy chỉnh
+        String[] options = {"Yes", "No"};
+        int option = JOptionPane.showOptionDialog(
+                null, 
+                "Do you want to change the first class ticket?", 
+                "Choose an option", 
+                JOptionPane.DEFAULT_OPTION, 
+                JOptionPane.INFORMATION_MESSAGE, 
+                null, 
+                options, 
+                options[0]);
+        JOptionPane.showMessageDialog(null, "You've chosen: " + (option == 0 ? "Yes" : "No"));
+
+        System.exit(0);
+    }
+}
+
+
+package Home;
+
+import javax.swing.JOptionPane;
+
+public class ChoosingOption2 {
+    public static void main(String[] args) {
+        String[] options = {"I do", "I don't"};
+        int option = JOptionPane.showOptionDialog(
+                null, 
+                "Do you want to change the first class ticket?", 
+                "Choose an option", 
+                JOptionPane.DEFAULT_OPTION, 
+                JOptionPane.INFORMATION_MESSAGE, 
+                null, 
+                options, 
+                options[0]);
+        JOptionPane.showMessageDialog(null, "You've chosen: " + (option == 0 ? "I do" : "I don't"));
+
+        System.exit(0);
+    }
+}
+
